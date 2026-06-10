@@ -1,0 +1,176 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fbf9f6;
+    color: #4a3b32;
+    line-height: 1.6;
+}
+
+/* Barra de Navegação (Atualizada para começar transparente) */
+header.Cima {
+    background-color: transparent;
+    /* Começa transparente */
+    box-shadow: none;
+    /* Começa sem sombra */
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    /* Transição suave */
+}
+
+header .logo {
+    color: #f7e6c4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #fbf9f6;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #f7e6c4;
+}
+
+/* Banner Principal (Removido o margin-top para o menu transparente colar no topo) */
+.hero {
+    height: 100vh;
+    /* Aumentado para 100vh para destacar o efeito do scroll de 600px */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #f7e6c4;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #c08c5d;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #a47143;
+}
+
+/* Seção Sobre Nós */
+.sobre {
+    padding: 80px 10%;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: #4a3b32;
+    margin-bottom: 20px;
+}
+
+/* Seção Menu (Cardápio) */
+.menu-secao {
+    background-color: #f3ede4;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.menu-secao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.item-menu {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.item-menu:hover {
+    transform: translateY(-5px);
+}
+
+.item-menu h3 {
+    margin: 15px 0 10px 0;
+    color: #4a3b32;
+}
+
+.item-menu .preco {
+    color: #c08c5d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #332720;
+    color: #fbf9f6;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    header.Cima {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 0 10px;
+    }
+}
