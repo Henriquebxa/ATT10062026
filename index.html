@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="shortcut icon" href="cafe_especialmente_fresco.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- 
+
     <header class="Cima">
         <a href="#" class="logo">☕ Café Aroma</a>
         <nav>
@@ -17,56 +19,74 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
- 
+
     <section class="hero">
         <h1>O café perfeito para o seu dia</h1>
         <p>Grãos selecionados, torra artesanal e um ambiente aconchegante esperando por você.</p>
         <a href="#cardapio" class="btn">Ver Cardápio</a>
     </section>
- 
+
     <section id="sobre" class="sobre">
         <h2>Nossa História</h2>
-        <p>No Café Aroma, acreditamos que o café é mais do que uma bebida — é um ritual. Desde 2020, selecionamos os melhores grãos de produtores locais para garantir uma experiência única em cada xícara. Venha sentir o aroma e relaxar no nosso espaço.</p>
+        <p>No Café Aroma, acreditamos que o café é mais do que uma bebida — é um ritual. Desde 2020, selecionamos os
+            melhores grãos de produtores locais para garantir uma experiência única em cada xícara. Venha sentir o aroma
+            e relaxar no nosso espaço.</p>
     </section>
- 
+
     <section id="cardapio" class="menu-secao">
         <h2>Nossos Favoritos</h2>
         <div class="cardapio-grid">
-            
+
             <div class="item-menu">
                 <h3>Espresso Tradicional</h3>
                 <p>Intenso e encorpado, feito com grãos 100% Arábica.</p>
                 <div class="preco">R$ 6,00</div>
+                <button class="btn-add" data-nome="Espresso Tradicional" data-preco="6.00">Adicionar</button>
             </div>
- 
+
             <div class="item-menu">
                 <h3>Cappuccino Italiano</h3>
                 <p>Espresso com leite vaporizado e uma camada cremosa de espuma.</p>
                 <div class="preco">R$ 11,00</div>
+                <button class="btn-add" data-nome="Cappuccino Italiano" data-preco="11.00">Adicionar</button>
             </div>
- 
+
             <div class="item-menu">
                 <h3>Latte Macchiato</h3>
                 <p>Leite quente, espuma e um toque delicado de espresso.</p>
                 <div class="preco">R$ 12,50</div>
+                <button class="btn-add" data-nome="Latte Macchiato" data-preco="12.50">Adicionar</button>
             </div>
- 
+
             <div class="item-menu">
                 <h3>Cookie de Baunilha</h3>
                 <p>Com gotas de chocolate nobre, quentinho e crocante.</p>
                 <div class="preco">R$ 8,00</div>
+                <button class="btn-add" data-nome="Cookie de Baunilha" data-preco="8.00">Adicionar</button>
             </div>
- 
+
         </div>
     </section>
-    
+
     <section class="mapa">
         <h2>Onde Estamos</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29241.013631021906!2d-46.81564162656332!3d-23.63563304779467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafeterias!5e0!3m2!1spt-BR!2sbr!4v1781326762602!5m2!1spt-BR!2sbr" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29241.013631021906!2d-46.81564162656332!3d-23.63563304779467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafeterias!5e0!3m2!1spt-BR!2sbr!4v1781326762602!5m2!1spt-BR!2sbr%22
+            allowfullscreen=" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+    </section>
+
+    <section id="carrinho" class="carrinho-secao">
+        <h2>Seu Carrinho</h2>
+        <div class="carrinho-container">
+            <ul id="itens-carrinho">
+                <li class="carrinho-vazio">Seu carrinho está vazio.</li>
+            </ul>
+            <div class="carrinho-total">
+                <span>Total:</span>
+                <span id="valor-total">R$ 0,00</span>
+            </div>
+            <button id="btn-finalizar" class="btn" disabled>Finalizar Pedido</button>
+        </div>
     </section>
 
     <footer id="contato">
@@ -74,8 +94,9 @@
         <p><strong>Horário:</strong> Segunda a Sábado, das 08h às 20h</p>
         <p>&copy; 2026 Café Aroma. Todos os direitos reservados.</p>
     </footer>
- 
+
     <script src="Script.js"></script>
- 
+
 </body>
+
 </html>
